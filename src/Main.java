@@ -8,7 +8,6 @@ public class Main {
         System.out.println(walk(35,-15));
         System.out.println(walk(22,31));
         System.out.println(generateRandomAge());
-        System.out.println(goWalk());
 
     }
 
@@ -28,13 +27,5 @@ public class Main {
         Random rand = new Random();
         int randomNumber = rand.nextInt(100);
        return randomNumber;
-    }
-    public static String goWalk(){
-        int age = generateRandomAge();
-        if (age>=40){
-            return "можно идти гулять";
-        }else{
-            return "оставайтесь дома";
-        }
     }
 }
